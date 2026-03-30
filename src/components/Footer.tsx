@@ -43,6 +43,8 @@ export default function Footer() {
                 { label: "Refunds & Returns", path: "/refunds-returns" },
                 { label: "RUO Disclaimer", path: "/ruo-disclaimer" },
                 { label: "Accessibility", path: "/accessibility" },
+                { label: "Cookie Notice", path: "/cookie-notice" },
+                { label: "Copyright & IP", path: "/copyright-ip" },
               ].map((item) => (
                 <li key={item.path}>
                   <Link to={item.path} className="text-sm text-primary-foreground/50 hover:text-primary-foreground transition-colors">

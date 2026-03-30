@@ -12,14 +12,14 @@ import QualityTesting from "./pages/QualityTesting";
 import Documentation from "./pages/Documentation";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import {
-  PrivacyPolicy,
-  TermsConditions,
-  ShippingPayments,
-  RefundsReturns,
-  RUODisclaimer,
-  AccessibilityStatement,
-} from "./pages/LegalPages";
+import { TermsConditions } from "./pages/LegalPages";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import RefundsReturns from "./pages/RefundsReturns";
+import RuoDisclaimer from "./pages/RuoDisclaimer";
+import ShippingPayments from "./pages/ShippingPayments";
+import Accessibility from "./pages/Accessibility";
+import CookieNotice from "./pages/CookieNotice";
+import CopyrightIP from "./pages/CopyrightIP";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -44,8 +44,10 @@ const App = () => (
             <Route path="/terms-conditions" element={<TermsConditions />} />
             <Route path="/shipping-payments" element={<ShippingPayments />} />
             <Route path="/refunds-returns" element={<RefundsReturns />} />
-            <Route path="/ruo-disclaimer" element={<RUODisclaimer />} />
-            <Route path="/accessibility" element={<AccessibilityStatement />} />
+            <Route path="/ruo-disclaimer" element={<RuoDisclaimer />} />
+            <Route path="/accessibility" element={<Accessibility />} />
+            <Route path="/cookie-notice" element={<CookieNotice />} />
+            <Route path="/copyright-ip" element={<CopyrightIP />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </BrowserRouter>
