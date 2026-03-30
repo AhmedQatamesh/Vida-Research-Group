@@ -72,12 +72,29 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        {/* Full compliance block */}
+        <div className="border-t border-primary-foreground/10 mt-12 pt-8 space-y-3">
+          <p className="text-xs text-primary-foreground/50 leading-relaxed">
+            <strong className="text-primary-foreground/70">Research Use Only:</strong> Products are designated Research Use Only and supplied solely for laboratory, analytical, or scientific research purposes by qualified professionals. Products are not intended for human or animal use.
+          </p>
+          <p className="text-xs text-primary-foreground/50 leading-relaxed">
+            Statements on this Site have not been evaluated by the U.S. Food and Drug Administration. Products are not intended to diagnose, treat, cure, mitigate, or prevent any disease.
+          </p>
+          <p className="text-xs text-primary-foreground/50 leading-relaxed">
+            VIDA Research Group is a chemical supplier and is not a compounding pharmacy under Section 503A of the Federal Food, Drug, and Cosmetic Act and is not an outsourcing facility under Section 503B of the Federal Food, Drug, and Cosmetic Act.
+          </p>
+          <p className="text-xs text-primary-foreground/50 leading-relaxed">
+            <strong className="text-primary-foreground/70">21+ only:</strong> Purchases are restricted to individuals 21 years of age or older.
+          </p>
+        </div>
+
+        {/* Copyright & IP notice */}
+        <div className="border-t border-primary-foreground/10 mt-6 pt-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-3">
           <p className="text-xs text-primary-foreground/40">
             © {new Date().getFullYear()} VIDA Research Group. All rights reserved.
           </p>
-          <p className="text-xs text-primary-foreground/40 text-center md:text-right max-w-lg">
-            All products are for research use only (RUO). Not for human consumption, diagnostic, or therapeutic use.
+          <p className="text-xs text-primary-foreground/40 text-left md:text-right max-w-lg leading-relaxed">
+            All content on this Site — including text, graphics, logos, images, and design elements — is owned by or licensed to VIDA Research Group and protected by intellectual property laws. Unauthorized reproduction or use is prohibited.
           </p>
         </div>
       </div>
